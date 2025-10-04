@@ -9,7 +9,7 @@ objects that exist 'beside' each other in a collection. If
 there are four objects adjacent to each other that contain
 the same value, it returns true.
 
-The reason I wrote this -and that it searches for 'four'- is 
+The reason I wrote this - and that it searches for 'four' - is 
 because I was thinking of a way to solve the problem of determining
 a winning-game in ConnectFour.
 

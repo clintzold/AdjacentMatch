@@ -1,24 +1,5 @@
-#I wrote this program to explore the idea of a method that could compare
-#neighbouring objects and their values to find a consecutive number of matches.
-
-#In this case - four ajdacent objects that return matching values
-
-#No matter the size of the array, if a block of four objects is found,
-#the method returns True.
-
-#I utilized a queue that grows unless a non-matching object is discovered,
-#at which point the queue is emptied of the previous collection and the new
-#object is added. 
-
-#Each new value restarts the process of looking for its own kind.
-
-#Creating this search algorithm was part of an idea I had for solving
-#the problem of ConnectFour for The Odin Project, which is why objects
-#are stored in a hash, instead of an array to begin with.
-
-#All classes and methods besides #four_kind? are simply there to support
-#the implementation of #four_kind?. I'm sure there are many other use
-#cases.
+#adjacent_match
+#searching function that finds a specified number of consecutive, matching objects
 
 class Objects
   attr_accessor :value, :id
@@ -69,7 +50,7 @@ class Collection
       else 
         matches = [curr]
       end
-      return true if match_array.length == num_of_matches 
+      return true if matches.length == num_of_matches 
     end
     #No consecutive matches of length 'num_of_matches' found
     return false
