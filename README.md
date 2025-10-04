@@ -20,9 +20,9 @@ HOW IT WORKS
       ecutive matches are needed to trigger a True response
 
     - passed array acts as a queue, with each object shifted and 
-      added to a collector array 'matches'
+      added to a collector array
 
-    - collector receives objects until number of matches if found OR
+    - collector receives objects until number of matches is found OR
       until a new object has a value that does not match
 
     - when a new object value is discovered, collector is reset to
